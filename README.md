@@ -1,7 +1,7 @@
 # mdast-lint-sentence-newline
 
 This is an [mdast-lint](https://github.com/wooorm/mdast-lint) rule that enforces
-a newline after an end of sentence in Markdown. yoy
+a newline after an end of sentence in Markdown.
 
 ```Text
 <!-- Invalid -->
