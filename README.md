@@ -48,7 +48,7 @@ mdast --no-stdout xxx.md
 npm install -g mdast
 npm install -g mdast-lint
 npm install -g mdast-lint-sentence-newline # global install!
-mdast --no-stdout -u lint="external:[\"mdast-lint-sentence-newline\"]" xxx.md
+mdast --no-stdout -u mdast-lint="external:[\"mdast-lint-sentence-newline\"]" xxx.md
 ```
 
 Note that the `lint=<lint_options>` option only works with `mdast >= 1.1.1`.
