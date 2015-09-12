@@ -16,10 +16,12 @@ This sentence should be on a second line.
 
 ## Using the rule
 
+### Via `.mdastrc`
+
 ```bash
 npm install -g mdast
 npm install -g mdast-lint
-npm install mdast-lint-sentence-newline
+npm install mdast-lint-sentence-newline # local install!
 ```
 
 Then, set up your `.mdastrc`:
@@ -39,3 +41,14 @@ Now you can use the following command to run the lint:
 ```bash
 mdast --no-stdout xxx.md
 ```
+
+### Via CLI
+
+```bash
+npm install -g mdast
+npm install -g mdast-lint
+npm install -g mdast-lint-sentence-newline # global install!
+mdast --no-stdout -u lint="external:[\"mdast-lint-sentence-newline\"]" xxx.md
+```
+
+Note that the `lint=<lint_options>` option only works with `mdast >= 1.1.1`.
