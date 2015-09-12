@@ -5,9 +5,11 @@ a newline after an end of sentence in Markdown.
 
 ```Text
 <!-- Invalid -->
+
 Hello, world. This sentence should be on a second line.
 
 <!-- Valid -->
+
 Hello, world.
 This sentence should be on a second line.
 ```
