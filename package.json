@@ -1,0 +1,29 @@
+{
+  "name": "mdast-lint-sentence-newline",
+  "version": "0.0.0",
+  "description": "Enforce a newline after an end of sentence in Markdown.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chcokr/mdast-lint-sentence-newline.git"
+  },
+  "keywords": [
+    "mdast",
+    "mdast-lint",
+    "mdast-plugin",
+    "markdown",
+    "lint"
+  ],
+  "author": "YJ Yang <chcokr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chcokr/mdast-lint-sentence-newline/issues"
+  },
+  "homepage": "https://github.com/chcokr/mdast-lint-sentence-newline#readme",
+  "dependencies": {
+    "unist-util-visit": "^1.0.0"
+  }
+}
