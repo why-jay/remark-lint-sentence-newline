@@ -1,3 +1,4 @@
+var assert = require('assert');
 var fs = require('fs');
 var mdast = require('mdast');
 var lintPlugin = require('mdast-lint');
@@ -19,12 +20,14 @@ describe('The rule passes', function () {
 
       processor.process(
         fs.readFileSync(path.join(__dirname, dir, 'file.md')).toString(),
-        function (err, res, file) {
+        function (err, file) {
           if (err) {
             throw err;
           }
-          // TODO: I keep getting `undefined, "string"` here?
-          console.log(file.messages, typeof file);
+          assert.deepEqual(
+            file.messages,
+            require(path.join(__dirname, dir, 'expected.js'))
+          );
           done();
         }
       );
