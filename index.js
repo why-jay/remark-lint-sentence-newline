@@ -30,8 +30,9 @@ function sentenceNewline(ast, file, preferred, done) {
 
     }
 
-    done();
   });
+
+  done();
 }
 
 module.exports = {
