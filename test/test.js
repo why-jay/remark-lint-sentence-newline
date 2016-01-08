@@ -1,7 +1,7 @@
 var assert = require('assert');
 var fs = require('fs');
-var mdast = require('mdast');
-var lintPlugin = require('mdast-lint');
+var remark = require('remark');
+var lintPlugin = require('remark-lint');
 var path = require('path');
 
 var directories = fs.readdirSync(__dirname).filter(function(file) {
@@ -14,7 +14,7 @@ describe('The rule passes', function () {
 
     it(dir, function (done) {
 
-      var processor = mdast().use(lintPlugin, {
+      var processor = remark().use(lintPlugin, {
         external: ['../index.js']
       });
 
