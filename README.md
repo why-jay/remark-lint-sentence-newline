@@ -1,9 +1,9 @@
 [![Build
-status](https://travis-ci.org/chcokr/mdast-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/mdast-lint-sentence-newline)
+status](https://travis-ci.org/chcokr/remark-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/remark-lint-sentence-newline)
 
-# mdast-lint-sentence-newline
+# remark-lint-sentence-newline
 
-This is an [mdast-lint](https://github.com/wooorm/mdast-lint) rule that enforces
+This is an [remark-lint](https://github.com/wooorm/remark-lint) rule that enforces
 a newline after an end of sentence in Markdown.
 
 ```Text
@@ -19,21 +19,21 @@ This sentence should be on a second line.
 
 ## Using the rule
 
-### Via `.mdastrc`
+### Via `.remarkrc`
 
 ```bash
-npm install -g mdast
-npm install -g mdast-lint
-npm install mdast-lint-sentence-newline # local install!
+npm install -g remark
+npm install -g remark-lint
+npm install remark-lint-sentence-newline # local install!
 ```
 
-Then, set up your `.mdastrc`:
+Then, set up your `.remarkrc`:
 
 ```JSON
 {
   "plugins": {
-    "mdast-lint": {
-      "external": ["mdast-lint-sentence-newline"]
+    "remark-lint": {
+      "external": ["remark-lint-sentence-newline"]
     }
   }
 }
@@ -42,16 +42,14 @@ Then, set up your `.mdastrc`:
 Now you can use the following command to run the lint:
 
 ```bash
-mdast --no-stdout xxx.md
+remark --no-stdout xxx.md
 ```
 
 ### Via CLI
 
 ```bash
-npm install -g mdast
-npm install -g mdast-lint
-npm install -g mdast-lint-sentence-newline # global install!
-mdast --no-stdout -u mdast-lint="external:[\"mdast-lint-sentence-newline\"]" xxx.md
+npm install -g remark
+npm install -g remark-lint
+npm install -g remark-lint-sentence-newline # global install!
+remark --no-stdout -u remark-lint="external:[\"remark-lint-sentence-newline\"]" xxx.md
 ```
-
-Note that the `lint=<lint_options>` option only works with `mdast >= 1.1.1`.
