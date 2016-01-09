@@ -1,0 +1,7 @@
+{
+  "plugins": {
+    "remark-lint": {
+      "external": ["remark-lint-sentence-newline"]
+    }
+  }
+}
