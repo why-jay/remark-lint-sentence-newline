@@ -15,7 +15,10 @@ describe('The rule passes', function () {
     it(dir, function (done) {
 
       var processor = remark().use(lintPlugin, {
-        external: ['../index.js']
+        external: ['../index.js'],
+        'sentence-newline': {
+          blacklist: ['e.g.'] // see test `blacklist`
+        }
       });
 
       processor.process(
