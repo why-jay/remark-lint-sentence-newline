@@ -1,5 +1,7 @@
 [![Build
 status](https://travis-ci.org/chcokr/remark-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/remark-lint-sentence-newline)
+[![Coverage
+Status](https://coveralls.io/repos/chcokr/remark-lint-sentence-newline/badge.svg?branch=master&service=github)](https://coveralls.io/github/chcokr/remark-lint-sentence-newline?branch=master)
 
 # remark-lint-sentence-newline
 
