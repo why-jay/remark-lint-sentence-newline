@@ -1,2 +1,1 @@
-Hello, world.This sentence should be on a second line.
-There being no space after "world" doesn't matter.
+Hello, world.No problem here because there is no space after the dot.
