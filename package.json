@@ -4,7 +4,7 @@
   "description": "Enforce a newline after an end of sentence in Markdown.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
