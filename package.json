@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-sentence-newline",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Enforce a newline after an end of sentence in Markdown.",
   "main": "index.js",
   "scripts": {
