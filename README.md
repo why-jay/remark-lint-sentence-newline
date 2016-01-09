@@ -1,3 +1,6 @@
+[![Build
+status](https://travis-ci.org/chcokr/mdast-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/mdast-lint-sentence-newline)
+
 # mdast-lint-sentence-newline
 
 This is an [mdast-lint](https://github.com/wooorm/mdast-lint) rule that enforces
