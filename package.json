@@ -4,7 +4,8 @@
   "description": "Enforce a newline after an end of sentence in Markdown.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "coveralls": "npm test && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,10 @@
     "unist-util-visit": "^1.0.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
+    "mocha-lcov-reporter": "^1.0.0",
     "remark": "^3.1.0",
     "remark-lint": "^2.0.0"
   }
