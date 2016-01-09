@@ -11,6 +11,9 @@
     "url": "git+https://github.com/chcokr/remark-lint-sentence-newline.git"
   },
   "keywords": [
+    "mdast",
+    "mdast-lint",
+    "mdast-plugin",
     "remark",
     "remark-lint",
     "remark-plugin",
