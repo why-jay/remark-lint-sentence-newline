@@ -1,5 +1,5 @@
 [![Build
-status](https://travis-ci.org/chcokr/mdast-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/mdast-lint-sentence-newline)
+status](https://travis-ci.org/chcokr/remark-lint-sentence-newline.svg)](https://travis-ci.org/chcokr/remark-lint-sentence-newline)
 
 # remark-lint-sentence-newline
 
