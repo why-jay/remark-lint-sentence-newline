@@ -11,9 +11,9 @@
     "url": "git+https://github.com/chcokr/mdast-lint-sentence-newline.git"
   },
   "keywords": [
-    "mdast",
-    "mdast-lint",
-    "mdast-plugin",
+    "remark",
+    "remark-lint",
+    "remark-plugin",
     "markdown",
     "lint"
   ],
@@ -27,7 +27,7 @@
     "unist-util-visit": "^1.0.0"
   },
   "devDependencies": {
-    "mdast": "^1.2.0",
-    "mdast-lint": "^1.1.1"
+    "remark": "^3.1.0",
+    "remark-lint": "^2.0.0"
   }
 }
