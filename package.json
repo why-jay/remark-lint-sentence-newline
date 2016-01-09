@@ -27,6 +27,7 @@
     "unist-util-visit": "^1.0.0"
   },
   "devDependencies": {
+    "mocha": "^2.3.4",
     "remark": "^3.1.0",
     "remark-lint": "^2.0.0"
   }
