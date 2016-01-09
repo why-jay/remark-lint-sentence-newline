@@ -2,6 +2,7 @@ module.exports = function createMessage(line, column) {
   return {
     name: line + ':' + column,
     file: '',
+    message: "Newline should follow end of sentence",
     reason: "Newline should follow end of sentence",
     line: line,
     column: column,
