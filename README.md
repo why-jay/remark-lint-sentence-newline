@@ -3,8 +3,8 @@ status](https://travis-ci.org/chcokr/remark-lint-sentence-newline.svg)](https://
 
 # remark-lint-sentence-newline
 
-This is an [remark-lint](https://github.com/wooorm/remark-lint) rule that enforces
-a newline after an end of sentence in Markdown.
+This is an [remark-lint](https://github.com/wooorm/remark-lint) rule that
+enforces a newline after an end of sentence in Markdown.
 
 How do we define an *end of sentence*?
 It is a `."`, `?"`, `!"`, `.`, `?` or `!` followed by a space.
