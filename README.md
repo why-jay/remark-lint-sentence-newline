@@ -62,3 +62,32 @@ npm install -g remark-lint
 npm install -g remark-lint-sentence-newline # global install!
 remark --no-stdout -u remark-lint="external:[\"remark-lint-sentence-newline\"]" xxx.md
 ```
+
+## Blacklisting
+
+Earlier, we defined what an *end of sentence* is, but often there are exceptions
+to the rule.
+For example, we often use `e.g.` followed by a space.
+The second dot followed by a space is eligible as an end of sentence, but we
+don't want a newline in the middle of the following sentence for example:
+
+```Text
+Some open-source projects (e.g. remark-lint) are awesome
+```
+
+So we need a way to define exceptions.
+The `blacklist` option in your `.remarkrc` (or in your CLI option) allows you to
+achieve this.
+
+```JSON
+{
+  "plugins": {
+    "remark-lint": {
+      "external": ["remark-lint-sentence-newline"],
+      "sentence-newline": {
+        "blacklist": ["e.g."]
+      }
+    }
+  }
+}
+```
