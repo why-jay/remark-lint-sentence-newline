@@ -1,1 +1,1 @@
-"Hello, world." "This should not be on a new line!" Same for this.
+"Hello, world." "This doesn't have to be on a new line!" Same for this.
