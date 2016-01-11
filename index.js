@@ -8,9 +8,6 @@ function sentenceNewline(ast, file, preferred, done) {
 
   visit(ast, 'text', function (node) {
     var sentenceStops = [
-      '!"', '."', '?"', // Make sure these are placed above the next line.
-                        // Otherwise, since ! is included in !" for example,
-                        // !" will not be detected.
       '!', '.', '?'
     ];
 
