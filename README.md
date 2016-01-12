@@ -9,14 +9,12 @@ This is an [remark-lint](https://github.com/wooorm/remark-lint) rule that
 enforces a newline after an end of sentence in Markdown.
 
 How do we define an *end of sentence*?
-It is a `."`, `?"`, `!"`, `.`, `?` or `!` followed by a space.
+It is a `.`, `?` or `!` followed by a space.
 
 ```Text
 <!-- Invalid -->
 
 Hello, world. This sentence should be on a second line.
-
-"Hello, world!" This sentence should be on a second line.
 
 <!-- Valid -->
 
@@ -24,6 +22,13 @@ Hello, world.
 This sentence should be on a second line.
 
 Hello.<-There is no space after the dot, so this is not an error.
+
+"Hello, world!" This sentence is not required to be on a second line because
+!" is not an end of sentence.
+! is, but not !".
+But you're free to add a newline after !", or wherever.
+This rule's job is to complain when you *don't* have a newline in certain cases.
+It never complains when you do have a newline.
 ```
 
 ## Using the rule
