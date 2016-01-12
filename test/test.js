@@ -14,12 +14,23 @@ describe('The rule passes', function () {
 
     it(dir, function (done) {
 
-      var processor = remark().use(lintPlugin, {
-        external: ['../index.js'],
-        'sentence-newline': {
-          blacklist: ['e.g.'] // see test `blacklist`
-        }
-      });
+      // Deliberately diversifying our plugin options to increase branch
+      // coverage.
+      var pluginOptions = {
+        external: ['../index.js']
+      };
+      if (dir === 'exclamation-mark') {
+        pluginOptions['sentence-newline'] = {
+          blacklist: ['e.g.']
+        };
+      }
+      if (dir === 'blacklist') {
+        pluginOptions['sentence-newline'] = {
+          blacklist: ['e.g.']
+        };
+      }
+
+      var processor = remark().use(lintPlugin, pluginOptions);
 
       processor.process(
         fs.readFileSync(path.join(__dirname, dir, 'file.md')).toString(),
