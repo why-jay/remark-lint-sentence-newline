@@ -25,11 +25,12 @@ Hello.<-There is no space after the dot, so this is not an error.
 
 "Hello, world!" This sentence is not required to be on a second line because
 !" is not an end of sentence.
-! is, but not !".
-But you're free to add a newline after !", or wherever.
+```
+
+Regarding that `!"` example: `!` is a sentence end, but `!"` isn't.
+But you're free to add a newline after `!"`, or wherever.
 This rule's job is to complain when you *don't* have a newline in certain cases.
 It never complains when you do have a newline.
-```
 
 ## Using the rule
 
@@ -60,6 +61,10 @@ remark --no-stdout xxx.md
 ```
 
 ### Via CLI
+
+The following works for `remark-lint >= 2.2.0`.
+Prior to 2.2.0, remark-lint did not load globally installed (a la `npm install
+-g`) lint rules, so the following wouldn't work.
 
 ```bash
 npm install -g remark
